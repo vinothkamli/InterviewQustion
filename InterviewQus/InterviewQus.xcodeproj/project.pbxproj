@@ -14,6 +14,8 @@
 		7D9A4A692D119881000AB5E5 /* InterviewQusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A4A682D119881000AB5E5 /* InterviewQusTests.swift */; };
 		7D9A4A732D119881000AB5E5 /* InterviewQusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A4A722D119881000AB5E5 /* InterviewQusUITests.swift */; };
 		7D9A4A752D119881000AB5E5 /* InterviewQusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A4A742D119881000AB5E5 /* InterviewQusUITestsLaunchTests.swift */; };
+		7D9A4A842D119923000AB5E5 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A4A832D119923000AB5E5 /* Language.swift */; };
+		7D9A4A872D119960000AB5E5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9A4A862D119960000AB5E5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		7D9A4A6E2D119881000AB5E5 /* InterviewQusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewQusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D9A4A722D119881000AB5E5 /* InterviewQusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQusUITests.swift; sourceTree = "<group>"; };
 		7D9A4A742D119881000AB5E5 /* InterviewQusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewQusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D9A4A832D119923000AB5E5 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		7D9A4A862D119960000AB5E5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,9 @@
 		7D9A4A562D11987F000AB5E5 /* InterviewQus */ = {
 			isa = PBXGroup;
 			children = (
+				7D9A4A8D2D119A2B000AB5E5 /* Presentation */,
+				7D9A4A882D1199AC000AB5E5 /* Domain */,
+				7D9A4A812D119909000AB5E5 /* Data */,
 				7D9A4A572D11987F000AB5E5 /* InterviewQusApp.swift */,
 				7D9A4A592D11987F000AB5E5 /* ContentView.swift */,
 				7D9A4A5B2D119881000AB5E5 /* Assets.xcassets */,
@@ -125,6 +132,85 @@
 				7D9A4A742D119881000AB5E5 /* InterviewQusUITestsLaunchTests.swift */,
 			);
 			path = InterviewQusUITests;
+			sourceTree = "<group>";
+		};
+		7D9A4A812D119909000AB5E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7D9A4A8B2D119A0B000AB5E5 /* Repositories */,
+				7D9A4A8A2D1199F6000AB5E5 /* DataSources */,
+				7D9A4A822D119913000AB5E5 /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7D9A4A822D119913000AB5E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D9A4A832D119923000AB5E5 /* Language.swift */,
+				7D9A4A862D119960000AB5E5 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D9A4A882D1199AC000AB5E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7D9A4A8C2D119A1C000AB5E5 /* UseCases */,
+				7D9A4A892D1199BD000AB5E5 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7D9A4A892D1199BD000AB5E5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		7D9A4A8A2D1199F6000AB5E5 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		7D9A4A8B2D119A0B000AB5E5 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7D9A4A8C2D119A1C000AB5E5 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		7D9A4A8D2D119A2B000AB5E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				7D9A4A8F2D119A46000AB5E5 /* ViewModels */,
+				7D9A4A8E2D119A3A000AB5E5 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7D9A4A8E2D119A3A000AB5E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D9A4A8F2D119A46000AB5E5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +343,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D9A4A842D119923000AB5E5 /* Language.swift in Sources */,
+				7D9A4A872D119960000AB5E5 /* Question.swift in Sources */,
 				7D9A4A5A2D11987F000AB5E5 /* ContentView.swift in Sources */,
 				7D9A4A582D11987F000AB5E5 /* InterviewQusApp.swift in Sources */,
 			);
