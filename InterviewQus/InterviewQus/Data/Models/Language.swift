@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct langauage: Identifiable, Codable {
+struct Language: Identifiable {
     let id: UUID
     let name: String
+    var questions: [Question] // Each language has its own questions
 }
